@@ -35,7 +35,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     addItem: () => dispatch(addItem()),
-    deleteItem: () => dispatch(deleteItem(7)),
+    deleteItem: () => dispatch(deleteItem()),
     saveItem: () => dispatch(saveItem()),
     toggleComplete: () => dispatch(toggleComplete()),
     toggleDetails: () => dispatch(toggleDetails()),
