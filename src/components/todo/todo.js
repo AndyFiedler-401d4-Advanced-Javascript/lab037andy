@@ -87,10 +87,8 @@ class ToDo extends React.Component {
       <>
         <header>
           <h2>
-            There are
-            {this.state.todoList.filter( item => !item.complete ).length}
-            Items To Complete
-          </h2>
+            There are {this.state.todoList.filter( item => !item.complete ).length}  Items To Complete
+            </h2>
         </header>
 
         <section className="todo">
