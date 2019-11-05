@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addItem, deleteItem, toggleTodo } from '../components/todo/todo';
+import { addItem, deleteItem, saveItem, toggleComplete, toggleDetails } from '../components/todo/todo';
 
 function ReduxCounter(props) {
   console.log(props);
-  const { addItem, deleteItem, toggleTodo } = props;
+  const { addItem, deleteItem, saveItem, toggleComplete, toggleDetails } = props;
 
   return (
     <div>
@@ -34,10 +34,11 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    increment: () => dispatch(increment()),
-    add7: () => dispatch(add(7)),
-    decrement: () => dispatch(decrement()),
-    reset: () => dispatch(reset()),
+    addItem: () => dispatch(addItem()),
+    deleteItem: () => dispatch(deleteItem(7)),
+    saveItem: () => dispatch(saveItem()),
+    toggleComplete: () => dispatch(toggleComplete()),
+    toggleDetails: () => dispatch(toggleDetails()),
   };
 }
 
