@@ -1,7 +1,7 @@
 import { createStore, combineReducers } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 
-import { reducer as todoList } from "./todo-reducer";
+import { reducer as todoList } from "./todoList-reducer";
 
 import { reducer as details } from "./details-reducer";
 
