@@ -79,6 +79,10 @@ class ToDo extends React.Component {
         showDetails: !!item,
       };
     });
+
+    
+    // let item = props.todoList.find(item => item._id === id);
+    // props.toggleDetails(item)
   }
 
   render() {
