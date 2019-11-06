@@ -4,7 +4,7 @@ import { addItem, deleteItem, saveItem, toggleComplete, toggleDetails } from '..
 
 function ReduxCounter(props) {
   console.log(props);
-  const { addItem, deleteItem, saveItem, toggleComplete, toggleDetails } = props;
+  const { addItem, deleteItem, toggleComplete, toggleDetails } = props;
 
   return (
     <div>
@@ -36,7 +36,6 @@ function mapDispatchToProps(dispatch) {
   return {
     addItem: () => dispatch(addItem()),
     deleteItem: () => dispatch(deleteItem()),
-    saveItem: () => dispatch(saveItem()),
     toggleComplete: () => dispatch(toggleComplete()),
     toggleDetails: () => dispatch(toggleDetails()),
   };
